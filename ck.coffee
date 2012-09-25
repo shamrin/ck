@@ -31,7 +31,9 @@ nest = (arg) ->
     if arg is undefined
       html += "#{newline}#{indent}"
   switch typeof arg
-    when 'string', 'number'
+    when 'number'
+      html += arg
+    when 'string'
       html += if options.autoescape then scope.esc arg else arg
     when 'object'
       html += arg.html if arg.html?
