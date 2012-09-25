@@ -107,4 +107,8 @@ compile = (code) ->
     fn.call options.context, scope
     html
 
-window.ck = {compile, scope, esc: scope.esc}
+ck = {compile, scope, esc: scope.esc}
+if module?
+  module.exports = ck
+else
+  window.ck = ck

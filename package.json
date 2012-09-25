@@ -2,6 +2,7 @@
   "name": "ck",
   "description": "A smaller, faster Coffeekup.",
   "version": "0.0.1",
+  "main": "ck.coffee",
   "dependencies": {
     "coffee-script": ">= 1.1.1"
   },
